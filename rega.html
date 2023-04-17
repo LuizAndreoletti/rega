@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="rega.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/84d31f13e8.js" crossorigin="anonymous"></script>
+  <title>Rega</title>
+</head>
+
+<body>
+  <header class="cabecalho">
+    <a href="rega.html">
+      <h1 class="logo">Rega - Gerenciamento de Plantas</h1>
+    </a>
+    <button class="btn-menu"><i class="fa-solid fa-bars fa-lg"></i></button>
+    <nav class="menu">
+      <a class="btn-close"><i class="fa fa-times"></i></a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="add-plant">
+      <h2>Cadastrar Nova Planta</h2>
+      <form>
+        <label for="name">Nome da Planta:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="species">Espécie:</label>
+        <input type="text" id="species" name="species">
+        
+        <div class="dropdown">
+          <button class="dropdown-toggle" id="plantas-dropdown">Selecionar planta</button>
+          <ul class="dropdown-menu" aria-labelledby="plantas-dropdown">
+            <li><a href="#">Planta 1</a></li>
+            <li><a href="#">Planta 2</a></li>
+            <li><a href="#">Planta 3</a></li>
+            <li><a href="#">Planta 4</a></li>
+            <li><a href="#">Planta 5</a></li>
+            <li><a href="#">Planta 6</a></li>
+            <li><a href="#">Planta 7</a></li>
+            <li><a href="#">Planta 8</a></li>
+            <li><a href="#">Planta 9</a></li>
+            <li><a href="#">Planta 10</a></li>
+          </ul>
+        </div>
+        
+        
+        
+
+
+
+
+        <button type="submit">Cadastrar</button>
+      </form>
+
+      
+    </section>
+
+    <section class="plant-list">
+      <h2>Plantas Cadastradas</h2>
+      <ul>
+        <li>
+          <h3>Nome da Planta</h3>
+          <p>Espécie: Espécie da Planta</p>
+          <p>Próxima Rega: DD/MM/AAAA</p>
+        </li>
+        <!-- Adicione mais elementos li para cada planta cadastrada -->
+      </ul>
+    </section>
+
+    <section class="calendar">
+      <h2>Calendário de Regas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Domingo</th>
+            <th>Segunda</th>
+            <th>Terça</th>
+            <th>Quarta</th>
+            <th>Quinta</th>
+            <th>Sexta</th>
+            <th>Sábado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>01</td>
+            <td>02</td>
+          </tr>
+          <!-- Adicione mais linhas para cada semana do mês -->
+        </tbody>
+      </table>
+    </section>
+
+    <div class=".cards">
+      <div class="planta">
+        <img src="https://www.petz.com.br/blog/wp-content/uploads/2021/12/como-plantar-espada-de-sao-jorge.jpg" alt="">
+        <h3>Nome da Planta</h3>
+          <p>Espécie: Espécie da Planta</p>
+          <p>Próxima Rega: DD/MM/AAAA</p>
+      </div>
+
+      <div class="planta">
+        <img src="https://www.petz.com.br/blog/wp-content/uploads/2021/12/como-plantar-espada-de-sao-jorge.jpg" alt="">
+        <h3>Nome da Planta</h3>
+          <p>Espécie: Espécie da Planta</p>
+          <p>Próxima Rega: DD/MM/AAAA</p>
+      </div>
+
+      <div class="planta">
+        <img src="https://www.petz.com.br/blog/wp-content/uploads/2021/12/como-plantar-espada-de-sao-jorge.jpg" alt="">
+        <h3>Nome da Planta</h3>
+          <p>Espécie: Espécie da Planta</p>
+          <p>Próxima Rega: DD/MM/AAAA</p>
+      </div>
+    </div>
+
+
+  </main>
+
+  <script src="http://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    $(".btn-menu").click(function () {
+      $(".menu").show();
+    });
+    $(".btn-close").click(function () {
+      $(".menu").hide();
+    });
+    
+    
+    
+
+  </script>
+  <script src="rega.js"></script>
+</body>
+
+</html>
