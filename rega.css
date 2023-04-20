@@ -43,17 +43,6 @@ img {
     font-size: 0px;
 }
 
-.btn-menu {
-    width: 56px;
-    height: 56px;
-    float: right;
-    text-align: center;
-    color: #fff;
-    border-radius: 56px;
-    cursor: pointer;
-    background: linear-gradient(to right, #3C6255, #61876E);
-}
-
 
 
 main {
@@ -190,7 +179,7 @@ section {
 }
 
 
-/*------------------------------------*/
+/*---------------- selecionar plantas--------------------*/
 
 .dropdown {
     position: relative;
@@ -234,13 +223,13 @@ section {
     display: block;
   }
 
-  /*-------------------------------------*/
+  /*----------------menu---------------------*/
   
   /* Style The Dropdown Button */
 .menu2btn {
     
     border-radius: 5px;
-    background-color: #4CAF50;
+    background: linear-gradient(to right, #3C6255, #61876E);
     color: white;
     padding: 16px;
     font-size: 16px;
