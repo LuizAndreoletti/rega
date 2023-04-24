@@ -13,8 +13,8 @@ class Planta(models.Model):
     def __str__(self):
         return self.planta_name
 
-class Pessoa(models.Model):
-    login = models.CharField(max_length=100)
+class Login(models.Model):
+    email = models.CharField(max_length=100)
     senha = models.CharField(max_length=100)
 
     def __str__(self):
