@@ -34,28 +34,32 @@
     <section class="add-plant">
       <h2>Cadastrar Nova Planta</h2>
       <form>
-        
-        <input type="text" id="nome" name="nome" placeholder="Nome da plantinha" required>
+        <label for="nome">Nome da Planta:</label>
+    <input type="text" id="nome" name="nome" required>
 
-        
-        <input type="text" id="descricao" name="descricao" placeholder="Descrição">
-        
-        <div class="dropdown">
-          <button class="dropdown-toggle" id="plantas-dropdown">Selecionar espécie</button>
-          <ul class="dropdown-menu" aria-labelledby="plantas-dropdown">
-            <li><a href="#">Jasmim</a></li>
-            <li><a href="#">Violeta</a></li>
-            <li><a href="#">Cacto</a></li>
-            <li><a href="#">Orquídea</a></li>
-            <li><a href="#">Begônia</a></li>
-            <li><a href="#">Rosa</a></li>
-            <li><a href="#">Hortênsia</a></li>
-            <li><a href="#">Suculentas</a></li>
-            <li><a href="#">Crisântemo</a></li>
-            <li><a href="#">Lírio</a></li>
-          </ul>
-        </div>
-        
+    <label for="substrato">Substrato:</label>
+    <input type="text" id="substrato" name="substrato" required>
+
+    <label for="fertilizante">Fertilizante:</label>
+    <input type="text" id="fertilizante" name="fertilizante" required>
+
+    <label for="data-rega">Data da Última Rega:</label>
+    <input type="date" id="data-rega" name="data-rega" required>
+
+    <label for="especie">Espécie</label>
+        <select name="especie" id="especie" required>
+          <option value="">Espécie</option>
+          <option value="jasmim">Jasmim</option>
+          <option value="violeta">Violeta</option>
+          <option value="cacto">Cacto</option>
+          <option value="arquidea">Orquídea</option>
+          <option value="begonia">Begônia</option>
+          <option value="rosa">Rosa</option>
+          <option value="hortensia">Hortênsia</option>
+          <option value="suculenta">Suculenta</option>
+          <option value="crisantemo">Crisântemo</option>
+          <option value="lirio">Lírio</option>
+        </select>
         
         
 
@@ -69,17 +73,44 @@
     </section>
 
     <section class="plant-list">
-      <h2>Plantas Cadastradas</h2>
-      <ul>
-        <li>
-          <h3>Nome da Planta</h3>
-          <p>Espécie: Espécie da Planta</p>
-          <p>Próxima Rega: DD/MM/AAAA</p>
-        </li>
-        <!-- Adicione mais elementos li para cada planta cadastrada -->
-      </ul>
+      <h1>Lista de Plantas Cadastradas</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Espécie</th>
+          <th>Substrato</th>
+          <th>Fertilizante</th>
+          <th>Data da Próxima Rega</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Nome">Planta 1</td>
+          <td data-label="Espécie">Espécie 1</td>
+          <td data-label="Substrato">Substrato 1</td>
+          <td data-label="Fertilizante">Fertilizante 1</td>
+          <td data-label="Data da Próxima Rega">01/01/2022</td>
+        </tr>
+        <tr>
+          <td data-label="Nome">Planta 2</td>
+          <td data-label="Espécie">Espécie 2</td>
+          <td data-label="Substrato">Substrato 2</td>
+          <td data-label="Fertilizante">Fertilizante 2</td>
+          <td data-label="Data da Próxima Rega">02/02/2022</td>
+        </tr>
+        <tr>
+          <td data-label="Nome">Planta 3</td>
+          <td data-label="Espécie">Espécie 3</td>
+          <td data-label="Substrato">Substrato 3</td>
+          <td data-label="Fertilizante">Fertilizante 3</td>
+          <td data-label="Data da Próxima Rega">03/03/2022</td>
+        </tr>
+      </tbody>
+    </table>
     </section>
 
+    <!--
     <section class="calendar">
       <h2>Calendário de Regas</h2>
       <table>
@@ -104,34 +135,27 @@
             <td>01</td>
             <td>02</td>
           </tr>
+          -->
           <!-- Adicione mais linhas para cada semana do mês -->
+        
         </tbody>
       </table>
     </section>
+    <!--
+    <div class="formulario">
+      <form class="cad">
+        <label for="nome">Nome</label><br>
+        <input type="text" id="nome" name="nome"><br>
+        <label for="fertilizante">Fertilizante</label><br>
+        <input type="text" id="fertilizante" name="fertilizante">
+      </form>
 
-    <div class=".cards">
-      <div class="planta">
-        <img src="https://www.petz.com.br/blog/wp-content/uploads/2021/12/como-plantar-espada-de-sao-jorge.jpg" alt="">
-        <h3>Nome da Planta</h3>
-          <p>Espécie: Espécie da Planta</p>
-          <p>Próxima Rega: DD/MM/AAAA</p>
-      </div>
-
-      <div class="planta">
-        <img src="https://www.petz.com.br/blog/wp-content/uploads/2021/12/como-plantar-espada-de-sao-jorge.jpg" alt="">
-        <h3>Nome da Planta</h3>
-          <p>Espécie: Espécie da Planta</p>
-          <p>Próxima Rega: DD/MM/AAAA</p>
-      </div>
-
-      <div class="planta">
-        <img src="https://www.petz.com.br/blog/wp-content/uploads/2021/12/como-plantar-espada-de-sao-jorge.jpg" alt="">
-        <h3>Nome da Planta</h3>
-          <p>Espécie: Espécie da Planta</p>
-          <p>Próxima Rega: DD/MM/AAAA</p>
-      </div>
     </div>
-
+  -->
+  
+  <form>
+    
+  </form>
 
   </main>
 

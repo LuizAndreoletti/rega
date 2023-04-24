@@ -33,6 +33,10 @@ img {
     width: 93%;
     float: left;
     padding: 3% 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ddd;
 }
 
 .logo {
@@ -41,12 +45,13 @@ img {
     float: left;
     background: url(./img/logo-mobile.png) center center/56px no-repeat;
     font-size: 0px;
-}
+  }
 
 
 
 main {
-
+    margin-top: 70px;
+    width: 92%;
     float: left;
     padding: 3% 4%;
     background-color: #61876E;
@@ -61,7 +66,12 @@ main {
     }
 
     .cabecalho {
-        padding: 1%;
+        padding: 2%;
+        width: 100%;
+    }
+
+    .menu2btn{
+      margin-right: 30px;
     }
 }
 
@@ -95,7 +105,6 @@ section {
     padding: 5px;
     border-radius: 5px;
     border: none;
-    justify-content: space-between;
     margin-right: 5px;
     margin-bottom: 10px;
 }
@@ -238,6 +247,7 @@ section {
     background: linear-gradient(to right, #3C6255, #61876E);
     color: white;
     padding: 16px;
+
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -282,3 +292,75 @@ section {
   .dropdown:hover .dropbtn {
     background-color: #3e8e41;
   }
+
+  /*-------------form-----------*/
+ 
+  form {
+    text-align: left;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  input[type="text"], input[type="date"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  /*------lista------*/
+   /* Estilos para a lista de plantas */
+   table {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+ /* Estilos para tornar a tabela responsiva */
+ @media screen and (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+    overflow: auto;
+  }
+  th {
+    text-align: center;
+  }
+  td {
+    text-align: right;
+    border-bottom: none;
+    border-right: 1px solid #ddd;
+  }
+  td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
+}
