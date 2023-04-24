@@ -36,7 +36,7 @@ img {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #ddd;
+    background-color: #eeeeee;
 }
 
 .logo {
@@ -348,15 +348,16 @@ section {
  @media screen and (max-width: 600px) {
   table, thead, tbody, th, td, tr {
     display: block;
-    overflow: auto;
   }
   th {
     text-align: center;
+    border-bottom: 1px solid #ddd;
   }
   td {
     text-align: right;
     border-bottom: none;
     border-right: 1px solid #ddd;
+    
   }
   td:before {
     content: attr(data-label);
