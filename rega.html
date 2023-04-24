@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="rega.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/84d31f13e8.js" crossorigin="anonymous"></script>
   <title>Rega</title>
 </head>
@@ -18,15 +18,15 @@
     <a href="rega.html">
       <h1 class="logo">Rega - Gerenciamento de Plantas</h1>
     </a>
-    
 
-  <div class="menu2">
-    <button class="menu2btn">Menu</button>
-    <div class="menu2cont">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="index.html">Sair</a>
-    </div>
+
+    <div class="menu2">
+      <button class="menu2btn">Menu</button>
+      <div class="menu2cont">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="index.html">Sair</a>
+      </div>
   </header>
 
   <main>
@@ -35,18 +35,18 @@
       <h2>Cadastrar Nova Planta</h2>
       <form>
         <label for="nome">Nome da Planta:</label>
-    <input type="text" id="nome" name="nome" required>
+        <input type="text" id="nome" name="nome" required>
 
-    <label for="substrato">Substrato:</label>
-    <input type="text" id="substrato" name="substrato" required>
+        <label for="substrato">Substrato:</label>
+        <input type="text" id="substrato" name="substrato" required>
 
-    <label for="fertilizante">Fertilizante:</label>
-    <input type="text" id="fertilizante" name="fertilizante" required>
+        <label for="fertilizante">Fertilizante:</label>
+        <input type="text" id="fertilizante" name="fertilizante" required>
 
-    <label for="data-rega">Data da Última Rega:</label>
-    <input type="date" id="data-rega" name="data-rega" required>
+        <label for="data-rega">Data da Última Rega:</label>
+        <input type="date" id="data-rega" name="data-rega" required>
 
-    <label for="especie">Espécie</label>
+        <label for="especie">Espécie</label>
         <select name="especie" id="especie" required>
           <option value="">Espécie</option>
           <option value="jasmim">Jasmim</option>
@@ -60,102 +60,53 @@
           <option value="crisantemo">Crisântemo</option>
           <option value="lirio">Lírio</option>
         </select>
-        
-        
-
-
-
-
         <button type="submit">Cadastrar</button>
       </form>
-
-      
     </section>
 
     <section class="plant-list">
       <h1>Lista de Plantas Cadastradas</h1>
-    <table>
-      <thead>
-        <tr>
-          <th>Nome</th>
-          <th>Espécie</th>
-          <th>Substrato</th>
-          <th>Fertilizante</th>
-          <th>Data da Próxima Rega</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td data-label="Nome">Planta 1</td>
-          <td data-label="Espécie">Espécie 1</td>
-          <td data-label="Substrato">Substrato 1</td>
-          <td data-label="Fertilizante">Fertilizante 1</td>
-          <td data-label="Data da Próxima Rega">01/01/2022</td>
-        </tr>
-        <tr>
-          <td data-label="Nome">Planta 2</td>
-          <td data-label="Espécie">Espécie 2</td>
-          <td data-label="Substrato">Substrato 2</td>
-          <td data-label="Fertilizante">Fertilizante 2</td>
-          <td data-label="Data da Próxima Rega">02/02/2022</td>
-        </tr>
-        <tr>
-          <td data-label="Nome">Planta 3</td>
-          <td data-label="Espécie">Espécie 3</td>
-          <td data-label="Substrato">Substrato 3</td>
-          <td data-label="Fertilizante">Fertilizante 3</td>
-          <td data-label="Data da Próxima Rega">03/03/2022</td>
-        </tr>
-      </tbody>
-    </table>
-    </section>
-
-    <!--
-    <section class="calendar">
-      <h2>Calendário de Regas</h2>
       <table>
         <thead>
           <tr>
-            <th>Domingo</th>
-            <th>Segunda</th>
-            <th>Terça</th>
-            <th>Quarta</th>
-            <th>Quinta</th>
-            <th>Sexta</th>
-            <th>Sábado</th>
+            <th>Nome</th>
+            <th>Espécie</th>
+            <th>Substrato</th>
+            <th>Fertilizante</th>
+            <th>Data da Próxima Rega</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>01</td>
-            <td>02</td>
+            <td data-label="Nome">Planta 1</td>
+            <td data-label="Espécie">Espécie 1</td>
+            <td data-label="Substrato">Substrato 1</td>
+            <td data-label="Fertilizante">Fertilizante 1</td>
+            <td data-label="Data da Próxima Rega">01/01/2022</td>
           </tr>
-          -->
-          <!-- Adicione mais linhas para cada semana do mês -->
-        
+          <tr>
+            <td data-label="Nome">Planta 2</td>
+            <td data-label="Espécie">Espécie 2</td>
+            <td data-label="Substrato">Substrato 2</td>
+            <td data-label="Fertilizante">Fertilizante 2</td>
+            <td data-label="Data da Próxima Rega">02/02/2022</td>
+          </tr>
+          <tr>
+            <td data-label="Nome">Planta 3</td>
+            <td data-label="Espécie">Espécie 3</td>
+            <td data-label="Substrato">Substrato 3</td>
+            <td data-label="Fertilizante">Fertilizante 3</td>
+            <td data-label="Data da Próxima Rega">03/03/2022</td>
+          </tr>
         </tbody>
       </table>
     </section>
-    <!--
-    <div class="formulario">
-      <form class="cad">
-        <label for="nome">Nome</label><br>
-        <input type="text" id="nome" name="nome"><br>
-        <label for="fertilizante">Fertilizante</label><br>
-        <input type="text" id="fertilizante" name="fertilizante">
-      </form>
+    </tbody>
+    </table>
+    </section>
+<!--calendário-->
 
-    </div>
-  -->
-  
-  <form>
-    
-  </form>
+
 
   </main>
 
@@ -167,9 +118,9 @@
     $(".btn-close").click(function () {
       $(".menu").hide();
     });
-    
-    
-    
+
+
+
 
   </script>
   <script src="rega.js"></script>
