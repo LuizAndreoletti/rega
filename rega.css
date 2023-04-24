@@ -88,7 +88,7 @@ section {
 .add-plant {
   flex-basis: 100%;
   text-align: center;
-  background-color: wheat;
+  background-color: rgb(255, 255, 255);
 }
 
 .add-plant h2 {
@@ -390,7 +390,7 @@ th {
 /*-------calendário-------*/
 
 .wrapper {
-  width: 450px;
+  width: 100%;
   background: #fff;
   border-radius: 10px;
   -webkit-box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
@@ -407,7 +407,7 @@ th {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background: #ff898d;
+  background: hsl(135, 100%, 83%);
   border-radius: 10px 10px 0 0;
 }
 header .icons {
