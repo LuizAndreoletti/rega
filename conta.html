@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="conta.css">
+    <link rel="stylesheet" href="rega.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conta</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="rega.html">
+          <h1 class="logo">Rega - Gerenciamento de Plantas</h1>
+        </a>
+    
+    
+        <div class="menu2">
+          <button class="menu2btn">Menu</button>
+          <div class="menu2cont">
+            <a href="rega.html">Plantas</a>
+            <a href="conta.html">Conta</a>
+            <a href="index.html">Sair</a>
+          </div>
+      </header>
+    
+    <body>
+        <form class="form-conta">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="first-name" value="João" disabled>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome" value="Silva" disabled>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" value="joao.silva@gmail.com" disabled>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" value="********" disabled>
+            <input type="button" id="edit-btn" class="edit-btn" value="Editar">
+            <input type="submit" id="save-btn" class="hide" value="Salvar Alterações">
+            <input type="button" id="cancel-btn" class="cancel-btn hide" value="Cancelar">
+            <p id="error-msg" class="error hide"></p>
+        </form>
+        <script src="conta.js"></script>
+</body>
+</html>
