@@ -16,7 +16,6 @@ const editBtn = document.getElementById('edit-btn');
 			emailInput.disabled = false;
 			passwordInput.disabled = false;
 		});
-
 		cancelBtn.addEventListener('click', () => {
 			editBtn.classList.remove('hide');
 			saveBtn.classList.add('hide');
