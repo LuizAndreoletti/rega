@@ -147,9 +147,14 @@ nav {
   color: #ccc;
 }
 
+@media (max-width:450px) {
+  #recursos{
+    display: none;
+  }
 
-@media (max-width:600px) {
-  
+  #sobre{
+    display: none;
+  }
 }
 
 .hero {
