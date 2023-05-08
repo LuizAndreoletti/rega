@@ -39,6 +39,7 @@ const editBtn = document.getElementById('edit-btn');
 				errorMsg.classList.remove('hide');
 			} else {
 				// Salvar as alterações e desabilitar os campos novamente
+				alert("Informações salvas");
 				editBtn.classList.remove('hide');
 				saveBtn.classList.add('hide');
 				cancelBtn.classList.add('hide');
@@ -47,6 +48,7 @@ const editBtn = document.getElementById('edit-btn');
 				emailInput.disabled = true;
 				passwordInput.disabled = true;
 				errorMsg.classList.add('hide');
+				
 			}
 		});
 
