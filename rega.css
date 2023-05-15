@@ -359,6 +359,9 @@ th {
 
 /* Estilos para tornar a tabela responsiva */
 @media screen and (max-width: 600px) {
+  #tplanta1{
+    display: none;
+  }
 
   table,
   thead,
