@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="rega.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/84d31f13e8.js" crossorigin="anonymous"></script>
+  <title>Rega</title>
+</head>
+
+<body>
+  <header class="cabecalho">
+    <a href="rega.html">
+      <h1 class="logo">Rega - Gerenciamento de Plantas</h1>
+    </a>
+
+
+    <div class="menu2">
+      <button class="menu2btn">Menu</button>
+      <div class="menu2cont">
+        <a href="rega.html">Plantas</a>
+        <a href="conta.html">Conta</a>
+        <a href="index.html">Sair</a>
+      </div>
+  </header>
+
+  <main>
+
+    <section class="add-plant">
+      <h2>Cadastrar Nova Planta</h2>
+      <form>
+        <label for="nome">Nome da Planta:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="substrato">Substrato:</label>
+        <input type="text" id="substrato" name="substrato" required>
+
+        <label for="fertilizante">Fertilizante:</label>
+        <input type="text" id="fertilizante" name="fertilizante" required>
+
+        <label for="data-rega">Data da Última Rega:</label>
+        <input type="date" id="data-rega" name="data-rega" required>
+
+        <label for="especie">Espécie</label>
+        <select name="especie" id="especie" required>
+          <option value="">Espécie</option>
+          <option value="jasmim">Jasmim</option>
+          <option value="violeta">Violeta</option>
+          <option value="cacto">Cacto</option>
+          <option value="arquidea">Orquídea</option>
+          <option value="begonia">Begônia</option>
+          <option value="rosa">Rosa</option>
+          <option value="hortensia">Hortênsia</option>
+          <option value="suculenta">Suculenta</option>
+          <option value="crisantemo">Crisântemo</option>
+          <option value="lirio">Lírio</option>
+        </select>
+        <button type="submit">Cadastrar</button>
+      </form>
+    </section>
+    
+    <section class="plant-list">
+      <h1>Lista de Plantas Cadastradas</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Espécie</th>
+            <th>Substrato</th>
+            <th>Fertilizante</th>
+            <th>Data da Próxima Rega</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Nome">Ana</td>
+            <td data-label="Espécie">Lírio</td>
+            <td data-label="Substrato">Solo natural</td>
+            <td data-label="Fertilizante">Fertilizante Forth Flores Tecnutri</td>
+            <td data-label="Data da Próxima Rega">01/01/2022</td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </section>
+    </tbody>
+    </table>
+    </section>
+<!--calendário-->
+<div class="wrapper">
+  <header>
+    <p class="current-date"></p>
+    <div class="icons">
+      <span id="prev">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+          <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+        </svg> 
+      </span>
+      
+      <span id="next">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+        </svg>
+      </span>
+     </div>
+  </header>
+   
+  <div class="calendar">
+    <ul class="weeks">
+      <li>Dom</li>
+      <li>Seg</li>
+      <li>Ter</li>
+      <li>Qua</li>
+      <li>Qui</li>
+      <li>Sex</li>
+      <li>Sab</li>
+    </ul>
+    <ul class="days"></ul>
+  </div>
+</div>
+
+  </main>
+
+  <script src="http://code.jquery.com/jquery-3.6.4.min.js"></script>
+  
+  <script src="rega.js"></script>
+  <script src="calendario.js"></script>
+</body>
+
+</html>
