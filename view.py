@@ -1,17 +1,19 @@
-from .models import pessoa, planta
+from flask import Flask, render_template
 
-def index(request):
-    people = Pessoa.objects.all()
-    context = {
-        'people': people,
-    }
-    return render(request, 'rega/index.html', context)
+app = Flask(__name__)
 
-def Planta(request, id_pessoa):
-    pessoa = get_object_or_404(pessoa, pk=id_pessoa)
-    Planta = Planta.objects.filter(pessoa=pessoa)
-    context = {
-        'pessoa': pessoa,
-        'planta': planta,
-    }
-    return render(request, 'rega/cadastro.html', context)
+class Planta:
+    def __init__(self, nome, especie, substrato, data):
+        self.nome = nome
+        self.especie = especie
+        self.substrato = substrato
+        self.data = data
+
+@app.route('/')
+def exibir_planta():
+    planta = Planta("Girassol", "Helianthus annuus", "Solo bem drenado", "2023-05-11")
+    return render_template('planta.html', planta=planta)
+
+if __name__ == '__main__':
+    app.run()
+
